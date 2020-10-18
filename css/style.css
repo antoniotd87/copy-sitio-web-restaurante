@@ -1,0 +1,243 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(73, 73, 73);
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.border-site {
+  border: 1px solid rgba(224, 212, 212, 0.733);
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+.contenedor {
+  max-width: 850px;
+  margin: 3rem auto;
+}
+
+.boton-primario {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.boton-primario:hover {
+  background-color: #98d865;
+}
+.boton-blanco {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-color: #fff;
+  border: 4px solid #98d865;
+  border-radius: 45px;
+  padding: 1.3rem 2.1rem;
+  transition: all 0.2s ease;
+}
+.boton-blanco:hover {
+  border-color: black;
+}
+
+/* Sitio Nav */
+.site-nav {
+  background-color: #181a1e;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.site-nav ul {
+  max-width: 1050px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.site-nav ul li {
+  padding: 1.3rem 0;
+}
+.site-nav ul li a {
+  color: #e3e3e4b7;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.site-nav ul li a:hover {
+  color: #f7f7fc;
+}
+/* Sitio Header */
+.site-header {
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 6.5rem 0 2rem 0;
+}
+.site-header .logo {
+  width: 350px;
+}
+.site-header h2 {
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  margin: 3rem 0 0 0;
+  font-weight: 700;
+}
+.site-header p {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.site-header .redes a {
+  color: white;
+  margin: 0 1.2rem;
+  font-size: 1.45rem;
+}
+/* Sitio Menu */
+.site-main {
+  text-align: center;
+}
+.site-main p {
+  font-size: 2rem;
+}
+.site-main span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.site-main a {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+/* Sitio Informacion */
+.site-info {
+  background-color: #f2f2f4;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.site-info p {
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+/* Sitio Imagenes */
+.imagenes-site {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 100%;
+}
+.imagenes-site .imagen {
+  flex: 0 0 25%;
+  max-width: 100%;
+}
+.imagenes-site .imagen img {
+  object-fit: cover;
+  width: 100%;
+  object-position: bottom;
+}
+/* Sitio Menu */
+.site-menu {
+  color: white;
+  text-transform: uppercase;
+  background-image: url(../img/wall.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0;
+  text-align: center;
+}
+.site-menu h2 {
+  font-weight: 700;
+}
+.site-menu p {
+  display: block;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+.site-menu a {
+  display: inline-block;
+  border: none;
+}
+.site-menu a:hover {
+  display: inline-block;
+  border: none;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+/* EndInfo */
+.site-endInfo {
+  background-color: #181a1e;
+  color: rgba(212, 212, 212, 0.884);
+}
+.site-endInfo .contenedor {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.site-endInfo .contenedor .caja {
+  flex: 0 0 30%;
+}
+.site-endInfo .caja h3 {
+  text-transform: uppercase;
+  color: white;
+}
+.site-endInfo .caja .atencion .dia {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(224, 212, 212, 0.733);
+}
+.site-endInfo .caja .contacto span {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.site-endInfo .caja .contacto .numero {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.site-endInfo .caja .contacto a {
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+/* Footer */
+.site-footer {
+  background-color: #181a1e;
+  color: rgba(212, 212, 212, 0.884);
+}
+.site-footer .footer {
+  max-width: 850px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(224, 212, 212, 0.795);
+}
+.site-footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer .footer a {
+  color: rgba(212, 212, 212, 0.884);
+  text-decoration: none;
+  margin-left: 1rem;
+}
